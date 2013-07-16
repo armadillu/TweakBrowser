@@ -15,6 +15,7 @@
 
 	IBOutlet NSTextField * urlBox;
 	IBOutlet MyWebView * webview;
+	IBOutlet NSTextField * gammaVal;
 
 }
 
