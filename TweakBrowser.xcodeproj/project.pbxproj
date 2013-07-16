@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB8DD2B01795C60200EF4120 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8DD2AF1795C60200EF4120 /* Cocoa.framework */; };
+		BB8DD2BA1795C60200EF4120 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB8DD2B81795C60200EF4120 /* InfoPlist.strings */; };
+		BB8DD2BC1795C60200EF4120 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8DD2BB1795C60200EF4120 /* main.m */; };
+		BB8DD2C01795C60200EF4120 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BB8DD2BE1795C60200EF4120 /* Credits.rtf */; };
+		BB8DD2C31795C60200EF4120 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8DD2C21795C60200EF4120 /* AppDelegate.m */; };
+		BB8DD2C61795C60200EF4120 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8DD2C41795C60200EF4120 /* MainMenu.xib */; };
+		BB8DD2CD1795C70100EF4120 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8DD2CC1795C70100EF4120 /* WebKit.framework */; };
+		BB8DD2D21795CA3500EF4120 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB8DD2D11795CA3500EF4120 /* QuartzCore.framework */; };
+		BB8DD2D51795CD1800EF4120 /* MyWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8DD2D41795CD1800EF4120 /* MyWebView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB8DD2AC1795C60200EF4120 /* TweakBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweakBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8DD2AF1795C60200EF4120 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BB8DD2B21795C60200EF4120 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BB8DD2B31795C60200EF4120 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BB8DD2B41795C60200EF4120 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BB8DD2B71795C60200EF4120 /* TweakBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TweakBrowser-Info.plist"; sourceTree = "<group>"; };
+		BB8DD2B91795C60200EF4120 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB8DD2BB1795C60200EF4120 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB8DD2BD1795C60200EF4120 /* TweakBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TweakBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		BB8DD2BF1795C60200EF4120 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BB8DD2C11795C60200EF4120 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB8DD2C21795C60200EF4120 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB8DD2C51795C60200EF4120 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BB8DD2CC1795C70100EF4120 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		BB8DD2D11795CA3500EF4120 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BB8DD2D31795CD1800EF4120 /* MyWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebView.h; sourceTree = "<group>"; };
+		BB8DD2D41795CD1800EF4120 /* MyWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB8DD2A91795C60200EF4120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8DD2D21795CA3500EF4120 /* QuartzCore.framework in Frameworks */,
+				BB8DD2CD1795C70100EF4120 /* WebKit.framework in Frameworks */,
+				BB8DD2B01795C60200EF4120 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB8DD2A31795C60200EF4120 = {
+			isa = PBXGroup;
+			children = (
+				BB8DD2D11795CA3500EF4120 /* QuartzCore.framework */,
+				BB8DD2B51795C60200EF4120 /* TweakBrowser */,
+				BB8DD2AE1795C60200EF4120 /* Frameworks */,
+				BB8DD2AD1795C60200EF4120 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB8DD2AD1795C60200EF4120 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB8DD2AC1795C60200EF4120 /* TweakBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB8DD2AE1795C60200EF4120 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB8DD2CC1795C70100EF4120 /* WebKit.framework */,
+				BB8DD2AF1795C60200EF4120 /* Cocoa.framework */,
+				BB8DD2B11795C60200EF4120 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB8DD2B11795C60200EF4120 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB8DD2B21795C60200EF4120 /* AppKit.framework */,
+				BB8DD2B31795C60200EF4120 /* CoreData.framework */,
+				BB8DD2B41795C60200EF4120 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BB8DD2B51795C60200EF4120 /* TweakBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				BB8DD2D31795CD1800EF4120 /* MyWebView.h */,
+				BB8DD2D41795CD1800EF4120 /* MyWebView.m */,
+				BB8DD2C11795C60200EF4120 /* AppDelegate.h */,
+				BB8DD2C21795C60200EF4120 /* AppDelegate.m */,
+				BB8DD2C41795C60200EF4120 /* MainMenu.xib */,
+				BB8DD2B61795C60200EF4120 /* Supporting Files */,
+			);
+			path = TweakBrowser;
+			sourceTree = "<group>";
+		};
+		BB8DD2B61795C60200EF4120 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB8DD2B71795C60200EF4120 /* TweakBrowser-Info.plist */,
+				BB8DD2B81795C60200EF4120 /* InfoPlist.strings */,
+				BB8DD2BB1795C60200EF4120 /* main.m */,
+				BB8DD2BD1795C60200EF4120 /* TweakBrowser-Prefix.pch */,
+				BB8DD2BE1795C60200EF4120 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB8DD2AB1795C60200EF4120 /* TweakBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8DD2C91795C60200EF4120 /* Build configuration list for PBXNativeTarget "TweakBrowser" */;
+			buildPhases = (
+				BB8DD2A81795C60200EF4120 /* Sources */,
+				BB8DD2A91795C60200EF4120 /* Frameworks */,
+				BB8DD2AA1795C60200EF4120 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweakBrowser;
+			productName = TweakBrowser;
+			productReference = BB8DD2AC1795C60200EF4120 /* TweakBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB8DD2A41795C60200EF4120 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Oriol Ferrer Mesià";
+			};
+			buildConfigurationList = BB8DD2A71795C60200EF4120 /* Build configuration list for PBXProject "TweakBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BB8DD2A31795C60200EF4120;
+			productRefGroup = BB8DD2AD1795C60200EF4120 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB8DD2AB1795C60200EF4120 /* TweakBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB8DD2AA1795C60200EF4120 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8DD2BA1795C60200EF4120 /* InfoPlist.strings in Resources */,
+				BB8DD2C01795C60200EF4120 /* Credits.rtf in Resources */,
+				BB8DD2C61795C60200EF4120 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB8DD2A81795C60200EF4120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8DD2BC1795C60200EF4120 /* main.m in Sources */,
+				BB8DD2C31795C60200EF4120 /* AppDelegate.m in Sources */,
+				BB8DD2D51795CD1800EF4120 /* MyWebView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB8DD2B81795C60200EF4120 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8DD2B91795C60200EF4120 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BB8DD2BE1795C60200EF4120 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8DD2BF1795C60200EF4120 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BB8DD2C41795C60200EF4120 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB8DD2C51795C60200EF4120 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB8DD2C71795C60200EF4120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BB8DD2C81795C60200EF4120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BB8DD2CA1795C60200EF4120 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweakBrowser/TweakBrowser-Prefix.pch";
+				INFOPLIST_FILE = "TweakBrowser/TweakBrowser-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB8DD2CB1795C60200EF4120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TweakBrowser/TweakBrowser-Prefix.pch";
+				INFOPLIST_FILE = "TweakBrowser/TweakBrowser-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB8DD2A71795C60200EF4120 /* Build configuration list for PBXProject "TweakBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8DD2C71795C60200EF4120 /* Debug */,
+				BB8DD2C81795C60200EF4120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8DD2C91795C60200EF4120 /* Build configuration list for PBXNativeTarget "TweakBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8DD2CA1795C60200EF4120 /* Debug */,
+				BB8DD2CB1795C60200EF4120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB8DD2A41795C60200EF4120 /* Project object */;
+}
