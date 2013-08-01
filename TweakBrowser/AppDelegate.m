@@ -26,7 +26,7 @@
 -(IBAction)setGamma:(id)sender;{
 	float power = [sender floatValue];
 	[gammaVal setFloatValue:power];
-	NSLog(@"setalpha: %f", power);
+	//NSLog(@"setalpha: %f", power);
 	[webview setGamma: power];
 }
 
