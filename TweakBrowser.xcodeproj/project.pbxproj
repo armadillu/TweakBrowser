@@ -319,6 +319,7 @@
 				BB8DD2CB1795C60200EF4120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,8 +10,17 @@
 #import <QuartzCore/QuartzCore.h>
 #import "MyWebView.h"
 #import <WebKit/WebKit.h>
+#import "WebPolicyDecisionListener.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>{
+
+@protocol WebKitFullScreenListener<NSObject>
+- (void)webkitWillEnterFullScreen;
+- (void)webkitDidEnterFullScreen;
+- (void)webkitWillExitFullScreen;
+- (void)webkitDidExitFullScreen;
+@end
+
+@interface AppDelegate : NSObject <NSApplicationDelegate, WebKitFullScreenListener>{
 
 	IBOutlet NSTextField * urlBox;
 	IBOutlet MyWebView * webview;

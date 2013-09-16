@@ -519,7 +519,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="624877180">
 								<int key="NSCellFlags">-1804599231</int>
 								<int key="NSCellFlags2">272630784</int>
-								<string key="NSContents">http://www.twitch.tv/wcs_europe/popout</string>
+								<string key="NSContents">http://www.youtube.com</string>
 								<object class="NSFont" key="NSSupport" id="694855753">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">13</double>
@@ -556,6 +556,7 @@
 							<string key="NSFrame">{{1, 322}, {39, 38}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:1574</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="100031587">
@@ -585,6 +586,7 @@
 							<string key="NSFrame">{{35, 322}, {39, 38}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:1574</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="338906656">
@@ -635,6 +637,7 @@
 							<string key="NSFrame">{{139, 336}, {40, 19}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="3017093">

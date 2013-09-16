@@ -13,12 +13,45 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
 
+	[webview setDownloadDelegate:self];
+	[webview setUIDelegate:self];
+	[webview setResourceLoadDelegate:self];
+	[webview setFrameLoadDelegate:self];
+
+}
+
+- (void)webView:(WebView *)sender didDrawFrame:(WebFrame *)frame;{
+	NSLog(@"didDrawFrame");
+}
+
+- (void)webkitWillEnterFullScreen;{
+	NSLog(@"webkitWillEnterFullScreen");
+}
+
+- (void)webView:(WebView *)sender enterFullScreenForElement:(DOMElement *)element;{
+	NSLog(@"enterFullScreenForElement");
+}
+
+
+- (void)playerWillEnterFullscreen:(NSNotification *)notification{
+	NSLog(@"playerWillEnterFullscreen");
+}
+
+
+- (void)webView:(WebView *)sender didStartProvisionalLoadForFrame:(WebFrame *)frame{
+	NSLog(@"didStartProvisionalLoadForFrame");
+	[urlBox setStringValue:[[[[[sender mainFrame] dataSource] request] URL] absoluteString]];
 }
 
 
 -(IBAction)loadURL:(id)sender;{
 
-	NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:[sender stringValue]]];
+	NSString *url = [sender stringValue];
+	if( ![url hasPrefix:@"http://"]){
+		url = [@"http://" stringByAppendingString:url];
+		[urlBox setStringValue:url];
+	}
+	NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
 	NSLog(@"req: %@", requestObj);
     [[webview mainFrame] loadRequest:requestObj];
 }

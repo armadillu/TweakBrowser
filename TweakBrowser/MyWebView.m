@@ -8,6 +8,7 @@
 	zoom = 1.0;
 }
 
+
 -(void)setGamma:(float) power{
 
 	gammaF = [CIFilter filterWithName:@"CIGammaAdjust"];
